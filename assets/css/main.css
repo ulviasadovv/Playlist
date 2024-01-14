@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 140, 119);
+  height: 100dvh;
+}
+
+.playlist-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 500px;
+  border-radius: 5px;
+  background: radial-gradient(rgb(1, 18, 82), rgb(0, 142, 119));
+  color: aliceblue;
+  box-shadow: 0 0 50px rgb(0, 72, 61);
+}
+.playlist-container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0 20px;
+  gap: 5px;
+}
+.playlist-container .header h6 {
+  font-weight: 400;
+}
+.playlist-container .img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 1px solid blue;
+  border-radius: 2px;
+}
+.playlist-container .audio {
+  margin: 20px 0;
+  height: 30px;
+}
+.playlist-container .button-container {
+  display: flex;
+  gap: 30px;
+}
+.playlist-container .button-container :first-child {
+  align-self: center;
+}
+.playlist-container .button-container :nth-child(3) {
+  align-self: center;
+}
+.playlist-container .button-container .control {
+  height: 50px;
+  width: 50px;
+}
+.playlist-container .button-container .control :hover {
+  background-color: rgb(177, 177, 177);
+}
+.playlist-container .button-container .control button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(41, 41, 41);
+  transition-duration: 0.2s;
+}
+.playlist-container .button-container .play-container {
+  width: 60px;
+  height: 60px;
+}
+
+.fa-play {
+  transform: translateX(1px);
+}
+
+/*# sourceMappingURL=main.css.map */
