@@ -69,5 +69,4 @@ myRange.onchange = function () {
     playButton.classList.remove("fa-play");
 }
 
-console.log(playButton.classList)
 
