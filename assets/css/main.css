@@ -37,15 +37,27 @@ body {
   font-weight: 400;
 }
 .playlist-container .img {
+  display: flex;
   width: 220px;
   height: 220px;
-  object-fit: cover;
-  border: 1px solid blue;
-  border-radius: 2px;
 }
-.playlist-container .audio {
+.playlist-container .timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 20px 0;
-  height: 30px;
+  gap: 20px;
+}
+.playlist-container .timer .audio {
+  display: none;
+}
+.playlist-container .timer .my-range {
+  appearance: none;
+  width: 270px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  cursor: pointer;
 }
 .playlist-container .button-container {
   display: flex;
@@ -81,6 +93,22 @@ body {
 
 .fa-play {
   transform: translateX(1px);
+}
+
+.my-range::-webkit-slider-thumb {
+  appearance: none;
+  background: rgb(0, 140, 119);
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */

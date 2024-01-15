@@ -19,35 +19,36 @@
 <body>
     <div class="playlist-container" id="first">
         <div class="header">
-            <h3>First Track</h3>
-            <h6>Artist Name</h6>
+            <h3>Inside You</h3>
+            <h6>lemonmusicstudio</h6>
         </div>
 
         <div class="img">
-            <img src="" alt="">
+            <img src="https://cdn.pixabay.com/audio/2023/08/18/07-22-33-620_200x200.png">
         </div>
 
         <div class="timer">
-            <audio src="" controls class="audio"></audio>
+            <audio src="assets/audios/inside-you-162760.mp3" controls class="audio"></audio>
+            <input type="range" class="my-range" value="0">
         </div>
 
         <div class="button-container">
 
             <div class="prev-container control">
                 <button class="prev">
-                    <i class="fa-solid fa-backward"></i>
+                    <i id="prev" class="fa-solid fa-backward"></i>
                 </button>
             </div>
 
             <div class="play-container control">
-                <button class="play">
-                    <i class="fa-solid fa-play"></i>
+                <button class="play" onclick = "playPause()">
+                    <i id ="play" class="fa-solid fa-play"></i>
                 </button>
             </div>
 
             <div class="next-container control">
                 <button class="next">
-                    <i class="fa-solid fa-forward"></i>
+                    <i id="next" class="fa-solid fa-forward"></i>
                 </button>
             </div>
 
@@ -56,16 +57,17 @@
 
     <div class="playlist-container" id="second">
         <div class="header">
-            <h3>Second Track</h3>
-            <h6>Artist Name</h6>
+            <h3>Titanium</h3>
+            <h6>AlisiaBeats</h6>
         </div>
 
         <div class="img">
-            <img src="" alt="">
+            <img src="https://cdn.pixabay.com/audio/2023/10/06/12-10-40-317_200x200.png">
         </div>
 
         <div class="timer">
-            <audio src="" controls class="audio"></audio>
+            <audio src="assets/audios/titanium-170190.mp3" controls class="audio"></audio>
+            <input type="range" class="my-range" value="0">
         </div>
 
         <div class="button-container">
@@ -103,6 +105,7 @@
 
         <div class="timer">
             <audio src="" controls class="audio"></audio>
+            <input type="range" class="my-range" value="0">
         </div>
 
         <div class="button-container">
